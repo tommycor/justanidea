@@ -1,0 +1,14 @@
+body {
+	.loader {
+		transform: translateZ(0);
+		opacity: 1;
+		transition: opacity 1s $ease-in-out-quad;
+		pointer-events: none;
+	}
+
+	&.is-loaded {
+		.loader {
+			opacity: 0;
+		}
+	}
+}

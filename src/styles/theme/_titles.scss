@@ -1,0 +1,11 @@
+.t-h1 {
+	@include viewportSizer( 'font-size', 36, $screen-base-width);
+	color: $white;
+	font-family: $main-font;
+	font-weight: $font-regular;
+	letter-spacing: -1px;
+
+	@media( max-width: 768px ) {
+		@include viewportSizer( 'font-size', 120, $screen-base-width);
+	}
+}

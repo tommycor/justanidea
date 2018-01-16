@@ -1,0 +1,167 @@
+.wrapper-inline-block {
+    font-size: 0;
+    position: relative;
+    height: 100%;
+    letter-spacing: normal;
+    line-height: normal;
+}
+
+.wrapper-panel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.wrapper-vertical-align {
+    &:after {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 100%;
+        position: relative;
+    }
+}
+
+.vertical-align-inline-block {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+
+    &--top {
+        vertical-align: top;
+    }
+
+    &--bottom {
+        vertical-align: bottom;
+    }
+}
+
+.no-float {
+    float: none;
+}
+
+.float-right {
+    float: right;
+}
+
+.float-left {
+    float: left;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.image-block {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-inline {
+    display: inline;
+}
+
+.d-inline-block {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.wrapper-relative{
+    position: relative;
+}
+
+.background-cover  {
+    background-size: cover;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.js-image-cover-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.viewport-full-height {
+    height: 100vh;
+}
+
+.viewport-full-width {
+    width: 100vw;
+}
+
+.force-3d {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+.pointer-none {
+    pointer-events: none;
+}
+
+.pointer-all {
+    pointer-events: all;
+}
+
+.select-none {
+    user-select: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.t-brush, .t-brush *:not(a):not(.cursor-pointer) {
+    cursor: url("./assets/medias/images/cursor/brush.png") 0 30, pointer;
+}
+
+.t-pencil, .t-pencil *:not(a):not(.cursor-pointer) {
+    cursor: url("./assets/medias/images/cursor/pencil.png") 0 30, pointer;
+}
+
+.t-wand, .t-wand *:not(a):not(.cursor-pointer) {
+    cursor: url("./assets/medias/images/cursor/wand.png") 25 5, pointer;
+}
+
+.t-bucket, .t-bucket *:not(a):not(.cursor-pointer) {
+    cursor: url("./assets/medias/images/cursor/bucket.png") 18 18, pointer;
+}
+

@@ -1,0 +1,33 @@
+.t-link {
+	@extend %reset-link;
+
+	position: relative;
+	pointer-events: none;
+
+	&:before {
+		content: '';
+		position: absolute;
+		bottom: -15%;
+		left: 0;
+		height: 2px;
+		width: 100%;
+		background-color: $white;
+		opacity: 0;
+		transform: translateZ(0);
+		transition: opacity .5s $ease-in-out-quad;
+	}
+
+	&:hover {
+		color: white;
+
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+body.is-active {
+	.t-link {
+		pointer-events: all;
+	}
+}

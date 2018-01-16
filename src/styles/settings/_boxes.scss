@@ -1,0 +1,71 @@
+%box-ratio {
+    position: relative;
+
+    &:before {
+        content: '';
+        width: 100%;
+        display: block;
+        position: relative;
+        padding-top: 100%;
+    }
+}
+
+.box-one-by-one {
+    @extend %box-ratio;
+}
+
+.box-four-by-three {
+    @extend %box-ratio;
+    &:before {
+        padding-top: 75%;
+    }
+}
+
+.box-three-by-four {
+    @extend %box-ratio;
+    &:before {
+        padding-top: 133.3%;
+    }
+}
+
+.box-nine-by-sixteen {
+    @extend %box-ratio;
+    &:before {
+        padding-top: 177.7%;
+    }
+}
+
+.box-sixteen-by-nine {
+    @extend %box-ratio;
+    &:before {
+        padding-top: 56.25%;
+    }
+}
+
+.box-four-by-five {
+    @extend %box-ratio;
+    &:before {
+        padding-top: 125%;
+    }
+}
+
+.box-five-by-four {
+    @extend %box-ratio;
+    &:before {
+        padding-top: 80%;
+    }
+}
+
+.box-four-by-ten {
+    @extend %box-ratio;
+    &:before {
+        padding-top: 62.5%;
+    }
+}
+
+.box-two-by-five {
+    @extend %box-ratio;
+    &:before {
+        padding-top: 40%;
+    }
+}

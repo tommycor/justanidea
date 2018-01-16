@@ -1,0 +1,28 @@
+$font-path: 'assets/fonts/';
+
+@font-face {
+	font-family: 'helvetica';
+	src:	url($font-path+'helvetica-regular.woff') format('woff'),
+			url($font-path+'helvetica-regular.woff2') format('woff2'),
+			url($font-path+'helvetica-regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'helvetica';
+	src:	url($font-path+'helvetica-bold.woff') format('woff'),
+			url($font-path+'helvetica-bold.woff2') format('woff2'),
+			url($font-path+'helvetica-bold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'helvetica';
+	src:	url($font-path+'helvetica-light.eot') format('eot');
+	src:	url($font-path+'helvetica-light.woff') format('woff'),
+			url($font-path+'helvetica-light.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+}

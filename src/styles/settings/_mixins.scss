@@ -1,0 +1,40 @@
+@mixin placeholder {
+    &::-moz-placeholder {
+        @content;
+        opacity: 1; // See https://github.com/twbs/bootstrap/pull/11526
+
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:placeholder {
+        @content;
+    }
+}
+
+@mixin selection {
+    ::-moz-selection {
+        @content;
+    }
+
+    ::selection {
+        @content;
+    }
+}
+
+@mixin backgroundGradient( $content ) {
+    background: -webkit-linear-gradient( $content );
+    background: -o-linear-gradient( $content );
+    background: -moz-linear-gradient( $content );
+    background: linear-gradient( $content );
+}
+
+@mixin viewportSizer( $property, $size, $screen ) {
+    #{$property}: 100vw * $size / $screen;
+}
